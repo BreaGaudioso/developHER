@@ -15,7 +15,9 @@
         $scope.allDevs = parseInt(company.num_eng);
         $scope.company = company.company;
         $scope.maleDevs = $scope.allDevs - $scope.femaleDevs;
-        console.log($scope.maleDevs);
+        $scope.pollData = [$scope.femaleDevs, $scope.maleDevs]
+        $scope.pollLabels = ["Female Developers", "Non-female Developers"]
+
       };
     }
 })();
