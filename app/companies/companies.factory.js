@@ -32,9 +32,8 @@
     $http.get('data.json').then(function(data){
       CompanyFactory.companies= data.data; //assigning data to variable
       updateJSON(CompanyFactory.companies); //updating variable with new key names
-      console.log('renamed data', CompanyFactory.companies);
-
-    })
+    });
+    
     return CompanyFactory;
   };
 })();

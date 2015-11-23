@@ -7,6 +7,8 @@
     CompaniesCtrl.$inject = ['$scope', 'CompanyFactory'];
     
     function CompaniesCtrl($scope, CompanyFactory) {
-      $scope.companies = CompanyFactory.companies;
+      $scope.work = "i work";
+      $scope.companies = CompanyFactory
+
     }
 })();
