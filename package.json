@@ -1,0 +1,19 @@
+{
+  "name": "developher",
+  "version": "1.0.0",
+  "description": "Develop her is a data visualization project using collected by an open source project spearheaded byTracy Chou of Pinterest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BreaGaudioso/developHER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BreaGaudioso/developHER/issues"
+  },
+  "homepage": "https://github.com/BreaGaudioso/developHER#readme"
+}
