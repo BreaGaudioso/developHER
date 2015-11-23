@@ -19,11 +19,15 @@ app.use(function(req, res, next) {
   next();
 });
 
+apiRouter.route('/')
+.get(function(req,res){
+  db.Company.find({},function (error,response){
+    console.log(response);
+    res.json(response);
+  })
+})
 app.use('/', apiRouter);
 
-app.get('/', function(req, res) {
-
-});
 
 PORT = 3001;
 
