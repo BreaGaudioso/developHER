@@ -1,8 +1,8 @@
 <div ng-controller="CompaniesCtrl as vm">
 <div class ="row">
-  <div class="col-lg-8">
-    <h2>Here will be all of our super duper COOL data </h2>
-    <h3>{{company}}</h3>
+  <div class="col-lg-8 text-center">
+    <h2 ng-if="!company"> Choose a company from the list to get started </h2>
+    <h2>{{company}}</h2>
     <h3 ng-if="femaleDevs">Female Devs: {{femaleDevs}}</h3>
     <h3 ng-if="allDevs" >All Devs: {{allDevs}}</h3>
   </div>
