@@ -1,16 +1,19 @@
 <div ng-controller="CompaniesCtrl as vm">
 <div class ="row">
-  <div class="col-lg-8">
-    <h2>Here will be all of our super duper COOL data </h2>
+  <div class="col-lg-8 text-center">
+    <h2 ng-if="!company"> Choose a company from the list to get started </h2>
+    <h2>{{company}}</h2>
+    <h3 ng-if="femaleDevs">Female Devs: {{femaleDevs}}</h3>
+    <h3 ng-if="allDevs" >All Devs: {{allDevs}}</h3>
   </div>
 
   <div class="col-lg-4">
     <div class="panel panel-primary">
       <div class="panel-heading">
-        <h3 class="panel-title">COMPANIES   <input type="text" ng-model="search" /></h3>
+        <h3 class="panel-title">COMPANIES <input type="text" ng-model="search" /></h3>
       </div>
       <div class="panel-body company-list">
-        <li ng-repeat="company in companies.companies | filter: search" ng-if='companies.companies.indexOf(company) > 1'>{{company.company}}</li>
+        <li ng-repeat="company in companies.companies | filter: search" ng-if='companies.companies.indexOf(company) > 1'> <a ng-click="makeChart(company)">{{company.company}}</a></li>
       </ul>
       </div>
     </div>
