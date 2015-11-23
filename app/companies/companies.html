@@ -3,9 +3,10 @@
   <div class="col-lg-8 text-center">
     <h2 ng-if="!company"> Choose a company from the list to get started </h2>
     <h2>{{company}}</h2>
+    <h3 ng-if="company"> {{percentage.toFixed(2)}}% women</h3>
     <canvas ng-if="allDevs" id="doughnut" class="chart chart-doughnut" chart-data="pollData" chart-labels="pollLabels" ></canvas>
   </div>
-  
+
   <div class="col-lg-4">
     <div class="panel panel-primary">
       <div class="panel-heading">
