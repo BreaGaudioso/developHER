@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/BreaGaudioso/developHER/issues"
   },
-  "homepage": "https://github.com/BreaGaudioso/developHER#readme"
+  "homepage": "https://github.com/BreaGaudioso/developHER#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.2.7",
+    "mongoose-seed": "^0.1.5"
+  }
 }
