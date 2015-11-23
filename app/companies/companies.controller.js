@@ -4,9 +4,9 @@
   .module("app.companies")
   .controller('CompaniesCtrl', CompaniesCtrl);
 
-    CompaniesCtrl.$inject = ['$scope'];
+    CompaniesCtrl.$inject = ['$scope', 'CompanyFactory'];
     
-    function CompaniesCtrl($scope) {
-      console.log('access')
+    function CompaniesCtrl($scope, CompanyFactory) {
+      $scope.companies = CompanyFactory.companies;
     }
 })();

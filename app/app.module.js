@@ -3,7 +3,9 @@
 
   angular.module('DevelopHerApp',[
     'ngRoute',
-    'app.companies'
+    // 'ngResource',
+    'app.companies',
+    'chart.js'
     ])
 
   .config(configRoutes)
