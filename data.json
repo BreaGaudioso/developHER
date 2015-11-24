@@ -1,4 +1,6 @@
-[
+{
+  "model": "Company",
+  "documents":[
   {
     "FIELD1":"key",
     "FIELD2":"company",
@@ -2650,4 +2652,4 @@
     "FIELD8":"",
     "FIELD9":""
   }
-]
+]};
