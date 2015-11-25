@@ -29,6 +29,7 @@ apiRouter.route('/companies')
   })
 })
 
+
 app.use('/', apiRouter);
 
 app.get('/', function(req,res){
