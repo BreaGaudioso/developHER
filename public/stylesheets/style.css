@@ -1,0 +1,15 @@
+
+body{
+  color: #552577;
+  font-family: Playfair-Display;
+
+}
+
+.panel{
+  border: 5px solid #C9B6EE;
+}
+
+.panel-body{
+  height: 400px;
+  overflow: auto;
+}
