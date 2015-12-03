@@ -4,6 +4,7 @@ bodyParser = require('body-parser'),
 methodOverride = require('method-override'),
 seeder = require('mongoose-seed'),
 apiRouter = express.Router(),
+fs = require('fs'),
 db = require('./models')
 
 app.set('view engine', 'ejs');
@@ -27,6 +28,7 @@ apiRouter.route('/companies')
     res.json(response);
   })
 })
+
 
 app.use('/', apiRouter);
 

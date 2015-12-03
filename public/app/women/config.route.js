@@ -7,7 +7,7 @@
 
   function womenRoute($routeProvider){
     $routeProvider
-    .when('/', {
+    .when('/stories', {
       templateUrl: 'app/women/women.html',
       controller: 'WomenCtrl'
     })

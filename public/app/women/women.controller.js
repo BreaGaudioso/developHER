@@ -8,6 +8,5 @@
 
     function WomenCtrl($scope, WomenFactory) {
       $scope.work = "i work";
-      };
     }
 })();
