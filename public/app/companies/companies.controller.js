@@ -9,7 +9,6 @@
     function CompaniesCtrl($scope, CompanyFactory) {
       $scope.work = "i work";
       $scope.companies = CompanyFactory;
-
       $scope.makeChart = function(company){
         $scope.femaleDevs = parseInt(company.num_female_eng);
         $scope.allDevs = parseInt(company.num_eng);
