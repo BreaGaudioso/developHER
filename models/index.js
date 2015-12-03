@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.createConnection('mongodb://localhost/db-company');
+mongoose.createConnection('mongodb://localhost/company-db');
 mongoose.set("debug", true);
 module.exports.Company = require("./company");
 
@@ -13,7 +13,7 @@ seeder.connect('mongodb://localhost/company-db', function() {
   });
 });
 
-var dataJson =
+var dataJson = [
 {
   "model": "Company",
   "documents":[
@@ -2657,5 +2657,4 @@ var dataJson =
     "submit_more_data":"",
     "github_repo":""
   }
-]};
->>>>>>> 5b3df68bc90be90f7f14e89c98c7733912d08ef6
+]}];

@@ -12,20 +12,3 @@ body{
   height: 400px;
   overflow: auto;
 }
-
- <style>
-#background {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-filter: blur(2px) grayscale(.8) opacity(0.6);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-}
-</style>
