@@ -5,6 +5,7 @@
     'ngRoute',
     // 'ngResource',
     'app.companies',
+    'app.women',
     'chart.js'
     ])
 
