@@ -23,12 +23,27 @@ app.use(function(req, res, next) {
 apiRouter.route('/companies')
 .get(function(req,res){
   db.Company.find({},function (error,response){
-    console.log(error);
-    console.log(response);
+    if (error) return res.json({message: "there was an error", error: error});
     res.json(response);
-  })
+  });
 })
 
+.post(function(req, res) {
+  var company = new Company();
+
+  company.name = req.body.company;
+  company.team = req.body.team;
+  company.num_femal_eng = req.body.num_female_eng;
+  company.num_eng = req.body.num_eng;
+  company.percent_femail_end = req.body.percent_femail_eng;
+  company.submit_more_data = req.body.submit_more_data;
+
+  company.save(function(error) {
+    if(error) return res.json({message: "there was an error", error: error })
+
+    res.json({ message: "new record sucessfully created" })
+  });
+});
 
 app.use('/', apiRouter);
 
