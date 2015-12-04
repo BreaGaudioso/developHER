@@ -7,8 +7,16 @@
 
   function companiesRoute($routeProvider){
     $routeProvider
-    .when('/', {
+    .when('/numbers', {
       templateUrl: 'app/companies/companies.html',
+      controller: 'CompaniesCtrl'
+    })
+      .when('/about', {
+      templateUrl: 'app/static/about.html',
+      controller: 'CompaniesCtrl'
+    })
+      .when('/', {
+      templateUrl: 'app/static/welcome.html',
       controller: 'CompaniesCtrl'
     })
   }

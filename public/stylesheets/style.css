@@ -1,14 +1,33 @@
+#navbar{
+    color: #EE798A;
+}
 
 body{
-  color: #552577;
   font-family: Playfair-Display;
 }
 
 .panel{
-  border: 5px solid #C9B6EE;
+  border: 5px solid #BDD4BB;
 }
 
 .panel-body{
   height: 400px;
   overflow: auto;
+}
+
+#jumbo {
+  margin-top: 200px;
+}
+
+a {
+ color:#EE798A;
+}
+
+a:hover {
+    color: #BDD4BB;
+}
+
+#svg {
+  width: 20px;
+  height: 20px;
 }
