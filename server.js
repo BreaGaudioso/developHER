@@ -29,19 +29,21 @@ apiRouter.route('/companies')
 })
 
 .post(function(req, res) {
-  var company = new Company();
-
-  company.name = req.body.company;
-  company.team = req.body.team;
-  company.num_femal_eng = req.body.num_female_eng;
-  company.num_eng = req.body.num_eng;
-  company.percent_femail_end = req.body.percent_femail_eng;
-  company.submit_more_data = req.body.submit_more_data;
-
-  company.save(function(error) {
+  console.log(req);
+  var company = db.Company.create(
+  {
+    key: req.body.company,
+    company:req.body.company,
+    team: req.body.team,
+    num_femal_eng: req.body.num_female_eng,
+    num_eng: req.body.num_eng,
+    percent_femail_end: req.body.percent_femail_eng,
+    last_updated: req.body.last_updated,
+    submit_more_data: req.body.submit_more_data,
+    github_repo: req.body.github_repo
+  }, function(error, response) {
     if(error) return res.json({message: "there was an error", error: error })
-
-    res.json({ message: "new record sucessfully created" })
+    res.json({ message: "new record sucessfully created", response: response })
   });
 });
 
