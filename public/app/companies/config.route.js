@@ -16,7 +16,7 @@
       controller: 'CompaniesCtrl'
     })
       .when('/', {
-      templateUrl: 'app/static/welcome.html',
+      templateUrl: 'app/static/about.html',
       controller: 'CompaniesCtrl'
     })
   }

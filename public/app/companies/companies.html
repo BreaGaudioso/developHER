@@ -5,11 +5,11 @@
     </div>
     <h2>{{company}}</h2>
     <h3 ng-if="company"> {{percentage.toFixed(2)}}% women</h3>
-    <canvas 
-    ng-if="allDevs" 
-    id="doughnut" 
-    class="chart chart-doughnut" 
-    chart-data="pollData" 
+    <canvas
+    ng-if="allDevs"
+    id="doughnut"
+    class="chart chart-doughnut"
+    chart-data="pollData"
     chart-labels="pollLabels"/>
   </div>
 
