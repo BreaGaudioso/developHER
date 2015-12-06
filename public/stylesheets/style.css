@@ -31,7 +31,17 @@ a:hover {
   width: 20px;
   height: 20px;
 }
+
 #logo {
   padding-top: 2px;
   height: 65px;
+}
+
+#backgroundPink {
+  z-index: -50;
+  position: fixed;
+  opacity: 0.5;
+  top: 15%;
+  left: 0%;
+  width: 150%;
 }
