@@ -40,8 +40,8 @@ a:hover {
 #backgroundPink {
   z-index: -50;
   position: fixed;
-  opacity: 0.5;
+  opacity: 0.4;
   top: 15%;
-  left: 0%;
-  width: 150%;
+  left: 1%;
+  width: 1500px;
 }
